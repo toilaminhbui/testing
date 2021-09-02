@@ -29,6 +29,7 @@ function App() {
           layout={Layout}
         />
         <LayoutRoute
+          exact
           path="/post/edit/:id"
           component={EditPost}
           layout={Layout}
