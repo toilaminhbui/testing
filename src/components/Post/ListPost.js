@@ -27,7 +27,7 @@ function ListPost() {
   useEffect(() => {
     setLoading(true)
     axios
-      .get(`https://bvm-it.tk/api/post?_page=${currentPage}`)
+      .get(`https://bvm-it.tk/api/post?page=${currentPage}&limit=3`)
       .then((res) => {
         setLoading(false)
         console.log("data", res.data.data)
