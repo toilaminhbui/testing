@@ -27,12 +27,14 @@ function ListPost() {
   useEffect(() => {
     setLoading(true)
     axios
-      .get(`https://bvm-it.tk/api/post?page=${currentPage}&limit=3`)
+      .get(
+        `https://buivanminh.herokuapp.com/api/post?page=${currentPage}&limit=3`
+      )
       .then((res) => {
         setLoading(false)
         console.log("data", res.data.data)
         if (totalPage === 0) {
-          setTotalPage(Math.ceil(res.data.total / 5))
+          setTotalPage(Math.ceil(res.data.total / 3))
         }
         setListPost(res.data.data)
       })
