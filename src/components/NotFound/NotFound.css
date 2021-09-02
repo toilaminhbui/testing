@@ -1,0 +1,7 @@
+#error {
+  background-color: #ebf3ff;
+  height: 100vh;
+}
+#error .img-error {
+  width: 100%;
+}
