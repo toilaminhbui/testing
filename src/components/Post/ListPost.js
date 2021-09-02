@@ -27,7 +27,7 @@ function ListPost() {
   useEffect(() => {
     setLoading(true)
     axios
-      .get(`https://buivanminh.glitch.me/post?_page=${currentPage}`)
+      .get(`https://bvm-it.tk/api/post?_limit=3&_page=${currentPage}`)
       .then((res) => {
         setLoading(false)
         console.log("data", res.data.data)
